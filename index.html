@@ -1,0 +1,210 @@
+<!DOCTYPE html><html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Medical Outreach News</title>
+  <script src="https://cdn.tailwindcss.com"></script>  <style>
+    .cursor {
+      border-right: 2px solid;
+      animation: blink 1s infinite;
+    }
+    @keyframes blink {
+      0%, 100% { border-color: transparent; }
+      50% { border-color: black; }
+    }
+  </style></head><body class="bg-white text-gray-800 font-sans"><!-- SKYLINE BACKGROUND --><div class="absolute top-0 left-0 w-full h-[400px] bg-gradient-to-b from-blue-100 via-white to-white -z-10"></div><!-- HEADER --><header id="mainHeader" class="bg-gradient-to-r from-blue-700 via-blue-600 to-blue-500 text-white shadow-lg sticky top-0 z-50 transition-all duration-300">
+  <div class="max-w-7xl mx-auto px-6 py-4 flex items-center justify-between"><!-- Left: Logo + Name -->
+<div class="flex items-center gap-4">
+  <img src="/IMG-20260409-WA0029.jpg" alt="Foundation Logo" class="logo w-12 h-12 md:w-14 md:h-14 object-cover rounded-xl border-2 border-white shadow transition-transform duration-300">
+  <div class="leading-tight">
+    <h1 class="text-lg md:text-xl font-bold">Richard’s Care Foundation</h1>
+    <p class="text-xs md:text-sm opacity-90">Healthcare • Community • Impact</p>
+  </div>
+</div>
+
+<!-- Desktop Nav -->
+<nav class="hidden md:flex items-center gap-8 font-medium">
+  <a href="#" class="hover:underline">Home</a>
+  <a href="#" class="hover:underline">About</a>
+  <a href="#article" class="hover:underline">Outreach</a>
+  <a href="#" class="hover:underline">Contact</a>
+</nav>
+
+<!-- Right: Partners + Hamburger -->
+<div class="flex items-center gap-4">
+
+  <div class="hidden md:flex items-center gap-3">
+    <span class="text-sm">Partners</span>
+    <img src="/file_00000000e3ec720a94ef966fdb1f385d.png" class="logo w-10 h-10 object-contain bg-white rounded-lg p-1 shadow transition-transform duration-300">
+  </div>
+
+  <!-- Hamburger -->
+  <button id="menuBtn" class="md:hidden focus:outline-none">
+    <div class="space-y-1">
+      <span class="block w-6 h-0.5 bg-white"></span>
+      <span class="block w-6 h-0.5 bg-white"></span>
+      <span class="block w-6 h-0.5 bg-white"></span>
+    </div>
+  </button>
+
+</div>
+
+  </div>  <!-- Mobile Menu -->  <div id="mobileMenu" class="hidden md:hidden bg-blue-600 px-6 pb-4">
+    <a href="#" class="block py-2">Home</a>
+    <a href="#" class="block py-2">About</a>
+    <a href="#article" class="block py-2">Outreach</a>
+    <a href="#" class="block py-2">Contact</a>
+  </div>
+</header><!-- HERO --><section class="py-20 text-center">
+  <div class="max-w-4xl mx-auto px-4"><h2 id="typingText" class="text-4xl md:text-6xl font-extrabold h-24"></h2>
+
+<p class="mt-6 text-lg text-gray-600">
+  Transforming healthcare access through compassion, innovation, and community-driven impact.
+</p>
+
+<div class="mt-8 flex justify-center gap-4">
+  <button onclick="scrollToSection()" class="bg-blue-600 text-white px-6 py-3 rounded-full shadow hover:bg-blue-700">Join Outreach</button>
+  <button onclick="showAlert()" class="border border-gray-300 px-6 py-3 rounded-full hover:bg-gray-100">Learn More</button>
+</div>
+
+  </div>
+</section><!-- FEATURE IMAGE --><section class="max-w-6xl mx-auto px-4 py-8">
+  <div class="w-full h-72 rounded-2xl overflow-hidden shadow-lg">
+    <img src="/IMG-20260409-WA0029.jpg" alt="Outreach Flyer" class="w-full h-full object-cover">
+  </div>
+</section><!-- QUICK STATS --><section class="max-w-6xl mx-auto px-4 py-10 grid md:grid-cols-4 gap-6 text-center">
+  <div class="bg-white p-6 rounded-2xl shadow">
+    <h3 class="text-3xl font-bold text-blue-600">500+</h3>
+    <p>Expected Beneficiaries</p>
+  </div>
+  <div class="bg-white p-6 rounded-2xl shadow">
+    <h3 class="text-3xl font-bold text-blue-600">20+</h3>
+    <p>Medical Experts</p>
+  </div>
+  <div class="bg-white p-6 rounded-2xl shadow">
+    <h3 class="text-3xl font-bold text-blue-600">100%</h3>
+    <p>Free Services</p>
+  </div>
+  <div class="bg-white p-6 rounded-2xl shadow">
+    <h3 class="text-3xl font-bold text-blue-600">1</h3>
+    <p>Strong Community</p>
+  </div>
+</section><!-- ARTICLE --><main id="article" class="max-w-3xl mx-auto px-4 pb-16">  <h1 class="text-4xl font-bold mb-6">A Healthy Man, A Strong Community</h1>
+  <p class="text-gray-500 mb-8">Inside Richard’s Care Foundation Free Medical Outreach</p>  <article class="space-y-8 leading-relaxed text-lg"><h2 class="text-3xl font-bold">The Story Behind It All</h2>
+<p>My name is Richard Thomas, and I am the humanitarian founder of Richard’s Care Foundation.</p>
+<p>This project began with a simple but powerful question:</p>
+<blockquote class="border-l-4 border-blue-500 pl-4 italic">“How can I turn the love I receive into impact for others?”</blockquote>
+
+<h2 class="text-3xl font-bold">The Moment That Changed Everything</h2>
+<p>A life-changing encounter in the mechanic village revealed a deeper truth: people are not neglecting health, they are choosing survival.</p>
+
+<h2 class="text-3xl font-bold">The Vision</h2>
+<p>Bring healthcare directly to the people.</p>
+
+<div class="bg-blue-50 p-6 rounded-xl shadow">
+  <h3 class="font-bold text-xl">Outreach Services</h3>
+  <ul class="list-disc pl-6 mt-2 space-y-2">
+    <li>Free consultations</li>
+    <li>Health screenings</li>
+    <li>Medication support</li>
+    <li>Health education</li>
+  </ul>
+</div>
+
+<h2 class="text-3xl font-bold">Event Details</h2>
+<p><strong>Date:</strong> April 18th</p>
+<p><strong>Time:</strong> 8:00 AM</p>
+<p><strong>Venue:</strong> Yenagoa</p>
+
+<h2 class="text-3xl font-bold">Call to Action</h2>
+<p>Join us in making healthcare accessible.</p>
+
+  </article></main><!-- FOOTER --><footer class="bg-gray-900 text-white py-10">
+  <div class="max-w-6xl mx-auto px-4 text-center space-y-6"><p class="font-semibold text-lg">MIRACARDIAC – Official Partner</p>
+
+<!-- MiraCardiac Logo (Clickable + Zoom Effect) -->
+<div class="flex justify-center">
+  <a href="/file_00000000e3ec720a94ef966fdb1f385d.png" target="_blank">
+    <img src="/file_00000000e3ec720a94ef966fdb1f385d.png" alt="MiraCardiac Logo" 
+    class="w-20 h-20 object-contain bg-white rounded-lg p-2 shadow-lg transition-transform duration-300 hover:scale-125">
+  </a>
+</div>
+
+<!-- Contacts -->
+<div class="text-sm text-gray-300 space-y-1">
+  <p><strong>Outreach Contact:</strong> +234 803 772 6314</p>
+</div>
+
+<!-- Credit -->
+<p class="text-sm text-gray-400">
+  Website created by 
+  <a href="https://miracardiacportfolio.vercel.app" target="_blank" class="underline hover:text-white">
+    Onyeka-Udechukwu Miracle
+  </a>
+</p>
+
+<p class="text-sm text-gray-500 mt-4">© 2026 Richard’s Care Foundation</p>
+
+  </div>
+</footer><!-- SCRIPT --><script>
+function scrollToSection(){
+  document.getElementById('article').scrollIntoView({ behavior: 'smooth' });
+}
+
+function showAlert(){
+  alert('More details coming soon!');
+}
+
+const text = "A Healthy Man, A Strong Community";
+let index = 0;
+let isDeleting = false;
+
+function typeEffect() {
+  const el = document.getElementById("typingText");
+
+  if (!isDeleting) {
+    el.innerHTML = text.substring(0, index++) + '<span class="cursor"></span>';
+    if (index > text.length) {
+      isDeleting = true;
+      setTimeout(typeEffect, 1500);
+      return;
+    }
+  } else {
+    el.innerHTML = text.substring(0, index--) + '<span class="cursor"></span>';
+    if (index < 0) isDeleting = false;
+  }
+
+  setTimeout(typeEffect, isDeleting ? 40 : 80);
+}
+
+typeEffect();
+
+// Shrinking header on scroll
+const header = document.getElementById('mainHeader');
+window.addEventListener('scroll', () => {
+  if (window.scrollY > 50) {
+    header.classList.add('py-2');
+    header.classList.remove('py-4');
+    document.querySelectorAll('.logo').forEach(l => l.classList.add('scale-90'));
+  } else {
+    header.classList.add('py-4');
+    header.classList.remove('py-2');
+    document.querySelectorAll('.logo').forEach(l => l.classList.remove('scale-90'));
+  }
+});
+
+// Mobile menu toggle
+const menuBtn = document.getElementById('menuBtn');
+const mobileMenu = document.getElementById('mobileMenu');
+menuBtn.addEventListener('click', () => {
+  mobileMenu.classList.toggle('hidden');
+});
+
+// Logo hover animation
+document.querySelectorAll('.logo').forEach(logo => {
+  logo.addEventListener('mouseenter', () => logo.classList.add('scale-110'));
+  logo.addEventListener('mouseleave', () => logo.classList.remove('scale-110'));
+});
+
+</script></body>
+</html>
