@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>MiraCardiac Hosting/Domain Price List</title>
+
+<script src="https://cdn.tailwindcss.com"></script>
+
+<style>
+  body {
+    background: linear-gradient(135deg, #0f172a, #1e3a8a, #0f172a);
+    font-family: Arial, sans-serif;
+  }
+
+  .glass {
+    background: rgba(255, 255, 255, 0.08);
+    backdrop-filter: blur(10px);
+    border: 1px solid rgba(255,255,255,0.1);
+  }
+
+  /* MODAL FIXED */
+  .modal {
+    display: none;
+    position: fixed;
+    inset: 0;
+    background: rgba(0,0,0,0.75);
+    justify-content: center;
+    align-items: center;
+    z-index: 9999;
+  }
+
+  .modal.show {
+    display: flex;
+  }
+
+  .modal-content {
+    background: #0f172a;
+    padding: 20px;
+    border-radius: 15px;
+    width: 92%;
+    max-width: 420px;
+  }
+</style>
+</head>
+
+<body class="text-white">
+
+<!-- HEADER -->
+<header class="text-center py-10">
+  <h1 class="text-4xl font-bold">MiraCardiac Hosting/Domain Price List</h1>
+  <p class="text-gray-300 mt-2">Professional Hosting & Domain Pricing Plan (2026)</p>
+</header>
+
+<!-- HOSTING -->
+<section class="max-w-6xl mx-auto px-4 mb-12">
+  <h2 class="text-2xl font-bold mb-6 text-center">Hosting Plan</h2>
+
+  <div class="glass p-6 rounded-2xl text-center">
+    <h3 class="text-xl font-semibold">Premium Web Hosting</h3>
+    <p class="text-gray-300 mt-2">Fast, secure & reliable hosting service</p>
+
+    <div class="text-4xl font-bold mt-4">₦15,000</div>
+    <p class="text-gray-300">Per Month</p>
+
+    <button onclick="openForm('Hosting','₦15,000 Monthly')" 
+      class="mt-5 px-6 py-2 bg-blue-600 hover:bg-blue-700 rounded-xl">
+      Order Hosting
+    </button>
+  </div>
+</section>
+
+<!-- DOMAINS -->
+<section class="max-w-6xl mx-auto px-4 mb-16">
+  <h2 class="text-2xl font-bold mb-6 text-center">Domain Pricing (6 Months Plan)</h2>
+
+  <div class="grid md:grid-cols-3 gap-6">
+
+    <div class="glass p-6 rounded-2xl text-center">
+      <h3 class="text-xl font-bold">.com</h3>
+      <p class="text-3xl font-bold mt-4">₦33,250</p>
+      <button onclick="openForm('.com Domain','₦33,250 / 6 Months')" 
+        class="mt-4 bg-blue-600 px-4 py-2 rounded-xl">
+        Order
+      </button>
+    </div>
+
+    <div class="glass p-6 rounded-2xl text-center">
+      <h3 class="text-xl font-bold">.org</h3>
+      <p class="text-3xl font-bold mt-4">₦29,750</p>
+      <button onclick="openForm('.org Domain','₦29,750 / 6 Months')" 
+        class="mt-4 bg-blue-600 px-4 py-2 rounded-xl">
+        Order
+      </button>
+    </div>
+
+    <div class="glass p-6 rounded-2xl text-center">
+      <h3 class="text-xl font-bold">.net</h3>
+      <p class="text-3xl font-bold mt-4">₦33,250</p>
+      <button onclick="openForm('.net Domain','₦33,250 / 6 Months')" 
+        class="mt-4 bg-blue-600 px-4 py-2 rounded-xl">
+        Order
+      </button>
+    </div>
+
+    <div class="glass p-6 rounded-2xl text-center">
+      <h3 class="text-xl font-bold">.info</h3>
+      <p class="text-3xl font-bold mt-4">₦24,000</p>
+      <button onclick="openForm('.info Domain','₦24,000 / 6 Months')" 
+        class="mt-4 bg-blue-600 px-4 py-2 rounded-xl">
+        Order
+      </button>
+    </div>
+
+    <div class="glass p-6 rounded-2xl text-center">
+      <h3 class="text-xl font-bold">.ng</h3>
+      <p class="text-3xl font-bold mt-4">₦47,750</p>
+      <button onclick="openForm('.ng Domain','₦47,750 / 6 Months')" 
+        class="mt-4 bg-blue-600 px-4 py-2 rounded-xl">
+        Order
+      </button>
+    </div>
+
+  </div>
+</section>
+
+<!-- MODAL -->
+<div id="modal" class="modal">
+  <div class="modal-content">
+
+    <h2 class="text-xl font-bold mb-4">Complete Your Order</h2>
+
+    <input id="name" placeholder="Your Name" class="w-full p-2 mb-2 text-black rounded">
+    <input id="email" placeholder="Email Address" class="w-full p-2 mb-2 text-black rounded">
+    <input id="website" placeholder="Website Name" class="w-full p-2 mb-2 text-black rounded">
+
+    <p id="selected" class="text-gray-300 text-sm mb-3"></p>
+
+    <button onclick="sendWhatsApp()" class="w-full bg-green-600 py-2 rounded-xl">
+      Send Order on WhatsApp
+    </button>
+
+    <button onclick="closeForm()" class="w-full mt-2 bg-red-600 py-2 rounded-xl">
+      Close
+    </button>
+
+  </div>
+</div>
+
+<!-- SCRIPT -->
+<script>
+let selectedItem = "";
+
+/* OPEN MODAL ONLY WHEN CLICKED */
+function openForm(item, price) {
+  selectedItem = item + " - " + price;
+  document.getElementById("selected").innerText = selectedItem;
+  document.getElementById("modal").classList.add("show");
+}
+
+/* CLOSE MODAL */
+function closeForm() {
+  document.getElementById("modal").classList.remove("show");
+}
+
+/* SEND TO WHATSAPP */
+function sendWhatsApp() {
+  let name = document.getElementById("name").value;
+  let email = document.getElementById("email").value;
+  let website = document.getElementById("website").value;
+
+  let message = `Hello MiraCardiac,%0A%0A
+Order Details:%0A${selectedItem}%0A%0A
+Name: ${name}%0A
+Email: ${email}%0A
+Website: ${website}%0A%0A
+Thank you.`;
+
+  let phone = "2348169395022";
+
+  window.open(`https://wa.me/${phone}?text=${message}`, "_blank");
+}
+</script>
+
+</body>
+</html>
